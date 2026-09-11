@@ -32,6 +32,12 @@ const games = await getAllGames(getDatabase());
 </Layout>
 ```
 
+## Component Contracts and Documentation
+
+- Every reusable component must declare a `Props` interface in frontmatter.
+- Document the `Props` interface with a short TSDoc comment describing the component's contract. Add property comments for non-obvious constraints, defaults, or accessibility requirements; avoid comments that merely repeat a property's type or name.
+- Keep prop documentation synchronized with the interface and rendered markup. Treat stale component documentation as a bug.
+
 ## Layouts
 
 - Create reusable layout components in `src/layouts/`
